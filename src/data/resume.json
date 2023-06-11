@@ -1,16 +1,19 @@
 [
   {
-    "id": "1",
-    "type": "file",
-    "name": "dspell-resume.json",
-    "data": {
-      "contact": {
-          "name": "David Spell",
-          "phone": "864-513-1312",
-          "email": "david@dspell.net",
-          "location": "Raleigh, NC",
-          "linkedin": "https://linkedin.com/dspell1"
-        },
+    "metadata": {
+      "id": "1",
+      "type": "file",
+      "name": "dspell-resume.json",
+      "date": "2023-06-11"
+    },
+    "contact": {
+      "name": "David Spell",
+      "phone": "864-513-1312",
+      "email": "david@dspell.net",
+      "location": "Raleigh, NC",
+      "linkedin": "https://linkedin.com/dspell1"
+    },
+    "content": {
       "tagline": "Accomplished IT professionall with over 16 years of experience. Proven talent in automation, scripting, deep-dive knowledge transfer, pattern recognition, and conflict de-escalation. History of developing non-traditional solutions to unconventional problems, works extremely well in cooperative and cross-functional environments. Dark mode enthusiast.",
       "skills": [
         {"FullStackDevelopment": "Use modern technologies and frameworks including React, Node.js, IBM Carbon, and others"},
