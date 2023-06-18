@@ -1,15 +1,10 @@
-import { Container, Row, Col, CardGroup, Card } from 'react-bootstrap'
-import './App.css';
-import data from './data/resume.json'
-function App() {
-  return (
-    <Container className='container'>
-      <>
-        {
-          data.entries()
-        }
-      </>
-    </Container>
-  );
+import {UserContext, Component1} from "./contexts/userContext";
+import './App.css'
+export default function Funk() {
+  return(
+    <>
+      <Component1 />
+      
+    </>
+  )
 }
-export default App;
