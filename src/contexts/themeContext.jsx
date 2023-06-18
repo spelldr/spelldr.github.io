@@ -1,18 +1,17 @@
-import { useReducer } from "react";
-
-const initialState = { darkMode: false};
-const themeReducer = (state, action) => {
-  switch(action.type) {
-    case "LIGHTMODE":
-      return {darkMode: false};
-      case "DARKMODE":
-        return {darkMode: true};
-        default:
-        return state;
-      }
-    }
-    
-export function ThemeProvider(props) {
-  const [state, dispatch] = useReducer(themeReducer, initialState)
-  return <ThemeContext.Provider value={{ state: state, dispatch: dispatch}}>{props.children}</ThemeContext.Provider>
-}
+// https://dev.to/imshines/how-to-create-a-theme-toggle-in-react-using-context-api-3a5i
+import  React  from  "react";
+// Context has been created
+const  ThemeContext  =  React.createContext(false);
+// Provider
+const  ThemeProvider  =  ({ children })  =>  {
+    const  [toggle, setToggle]  =  React.useState(false);
+    const toggleFunction =  ()  =>  {
+    setToggle(!toggle);
+};
+return  (
+    <ThemeContext.Provider value={{ toggle, toggleFunction }}>
+        {children}
+    </ThemeContext.Provider>
+    );
+};
+export  {  ThemeContext,  ThemeProvider  };
