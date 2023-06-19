@@ -1,15 +1,15 @@
 // https://dev.to/imshines/how-to-create-a-theme-toggle-in-react-using-context-api-3a5i
+// https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/
+
 import  React  from  "react";
-// Context has been created
 const  ThemeContext  =  React.createContext(false);
-// Provider
 const  ThemeProvider  =  ({ children })  =>  {
-    const  [toggle, setToggle]  =  React.useState(false);
-    const toggleFunction =  ()  =>  {
-    setToggle(!toggle);
+    const  [toggleTheme, setToggleTheme]  =  React.useState(false);
+    const ToggleThemeFunction =  ()  =>  {
+    setToggleTheme(!toggleTheme);
 };
 return  (
-    <ThemeContext.Provider value={{ toggle, toggleFunction }}>
+    <ThemeContext.Provider value={{ toggleTheme, ToggleThemeFunction }}>
         {children}
     </ThemeContext.Provider>
     );

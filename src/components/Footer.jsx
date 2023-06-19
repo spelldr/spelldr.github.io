@@ -2,9 +2,9 @@ import React from "react";
 import { ThemeContext } from "../contexts/themeContext";
 
 function Footer() {
-  const { toggle } = React.useContext(ThemeContext);
+  const { toggleTheme } = React.useContext(ThemeContext);
   return (
-    <div style={toggle ? { background: "blue" } : {}}>
+    <div style={toggleTheme ? { background: "blue" } : {}}>
       <h1>Footer Component</h1>
     </div>
   );
