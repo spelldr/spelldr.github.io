@@ -1,17 +1,24 @@
 import React from "react";
+import ThemeSwitcher from "./components/ThemeSwitcher";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Child from "./components/Child";
 import { ThemeContext } from "./contexts/themeContext";
 
 import "./App.css";
+import ResumeData from "./pages/ResumeData";
+import LeftBar from "./components/LeftBar";
+import { Stack } from "@carbon/react";
 
 export default function App() {
-  const { toggle } = React.useContext(ThemeContext);
+  const { toggleTheme } = React.useContext(ThemeContext);
   return (
-    <div className={toggle ? "dark" : "light"}>
+    <div className={toggleTheme ? "dark" : "light"}>
       <Header />
-      <Child />
+      <Stack gap={3}>
+        <ThemeSwitcher />
+        <LeftBar />
+      </Stack>
+        {/* <ResumeData /> */}
       <Footer />
     </div>
   );
