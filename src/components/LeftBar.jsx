@@ -5,7 +5,7 @@ const LeftBar = () => {
   return (
 
     <div style={{ width: 400 }}>
-        <Dropdown
+      <p>Left bar</p>  <Dropdown
           id="default"
           titleText="Dropdown label"
           helperText="This is some helper text"

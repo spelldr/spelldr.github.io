@@ -1,0 +1,40 @@
+@use "@carbon/react";
+html {
+  background-color: lightgray;
+}
+
+.light {
+  background-color: #e2e2e2;
+  color: #363537;
+  transition: all 0.3s linear;
+}
+
+.dark {
+  background-color: #363537;
+  color: #fafafa;
+  transition: all 0.3s linear;
+}
+
+body {
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.leftbar {
+  width: 30%;
+}
+
+.contentBlock {
+  padding: 20px;
+  margin: 5px;
+  border: 10px solid black;
+}
+.redbox {
+  border: 1px solid red;
+}
+.bluebox {
+  border: 1px solid blue;
+}
+.greenbox {
+  border: 1px solid green;
+}
