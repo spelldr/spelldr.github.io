@@ -5,22 +5,72 @@ import "./App.scss";
 import {
   Column,
   Grid,
-  ColumnHang,
   Theme,
   CodeSnippet,
+  ContainedList,
+  ContainedListItem,
   Tile,
+  Link,
 } from "@carbon/react";
 import resume from "./data/resume.json";
 export default function App() {
   const { toggleTheme } = React.useContext(ThemeContext);
 
   return (
-    <Theme theme="g90">
+    <Theme theme="g100">
       <Grid className="redbox container">
         <Column className="greenbox left" sm={1} md={2} lg={4}>
           <Tile className="content">
-            <h5>Left content</h5>
-            <p>This should span multiple rows</p>
+            <h1>PFP</h1>
+            <h3>Contact</h3>
+          </Tile>
+          <hr />
+          <Tile className="content">
+            <h6>Contact Info</h6>
+            <ContainedList
+              isInset
+              kind="on-page"
+              label="Contact"
+              size="sm"
+              className="hideHeader"
+            >
+              <ContainedListItem>{resume.contact.title}</ContainedListItem>
+              <ContainedListItem>{resume.contact.location}</ContainedListItem>
+              <ContainedListItem>{resume.contact.email}</ContainedListItem>
+              <ContainedListItem>
+                <Link href={resume.contact.linkedin}>LinkedIn</Link>
+              </ContainedListItem>
+            </ContainedList>
+          </Tile>
+          <hr />
+          <Tile className="content">
+            <h6>Education and certification</h6>
+            <ContainedList
+              isInset
+              kind="on-page"
+              label="Education and certification"
+              size="sm"
+              // className="hideHeader"
+            >
+              {resume.content.education.map((item, key) => (
+                <ContainedListItem key={key}>{item}</ContainedListItem>
+              ))}
+            </ContainedList>
+          </Tile>
+          <hr />
+          <Tile className="content">
+            <h6>Hobbies</h6>
+            <ContainedList
+              isInset
+              kind="on-page"
+              label="Hobbies"
+              size="sm"
+              // className="hideHeader"
+            >
+              {resume.content.hobbies.map((item, key) => (
+                <ContainedListItem key={key}>{item}</ContainedListItem>
+              ))}
+            </ContainedList>
           </Tile>
           <CodeSnippet type="multi">
             {JSON.stringify(resume, null, 2)}
@@ -44,12 +94,6 @@ export default function App() {
                   <p>{skill.description}</p>
                 </Tile>
               ))}
-            </Column>
-            <Column className="greenbox right" sm={4} md={8} lg={16}>
-              <p>The secret is a second, nested grid</p>
-            </Column>
-            <Column className="greenbox right" sm={4} md={8} lg={16}>
-              <p>The secret is a second, nested grid</p>
             </Column>
           </Grid>
         </Column>
