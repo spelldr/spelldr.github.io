@@ -12,7 +12,9 @@ import {
   Tile,
   Link,
 } from "@carbon/react";
-import resume from "./data/resume.json";
+import oldresume from "./data/resume.json";
+import resume from './data/linkedin.json'
+
 export default function App() {
   const { toggleTheme } = React.useContext(ThemeContext);
 
@@ -34,11 +36,15 @@ export default function App() {
               size="sm"
               className="hideHeader"
             >
-              <ContainedListItem>{resume.contact.title}</ContainedListItem>
-              <ContainedListItem>{resume.contact.location}</ContainedListItem>
-              <ContainedListItem>{resume.contact.email}</ContainedListItem>
+              <ContainedListItem>{resume.basics.label}</ContainedListItem>
+              <ContainedListItem>{resume.basics.location.city}, {resume.basics.location.state}</ContainedListItem>
+              <ContainedListItem>{resume.basics.email}</ContainedListItem>
+              <ContainedListItem>{resume.basics.phone}</ContainedListItem>
               <ContainedListItem>
-                <Link href={resume.contact.linkedin}>LinkedIn</Link>
+                {
+                  resume.basics.profiles.map(profile =>
+                  <Link href={profile.url}>{profile.network}</Link>)
+                }
               </ContainedListItem>
             </ContainedList>
           </Tile>
@@ -52,9 +58,17 @@ export default function App() {
               size="sm"
               // className="hideHeader"
             >
-              {resume.content.education.map((item, key) => (
-                <ContainedListItem key={key}>{item}</ContainedListItem>
-              ))}
+              {
+                  resume.education.sort((a,b) => a.endDate > b.endDate ? 1 : -1)
+                  .map((item, key) => (
+                    <ContainedListItem key={key}>
+                      {item.studyType}{' '}
+                      {item.area}<br />
+                      {item.institution}{', '}
+                      {item.endDate}
+                    </ContainedListItem>
+                  ))
+              }
             </ContainedList>
           </Tile>
           <hr />
@@ -67,13 +81,13 @@ export default function App() {
               size="sm"
               // className="hideHeader"
             >
-              {resume.content.hobbies.map((item, key) => (
+              {resume.interests.map((item, key) => (
                 <ContainedListItem key={key}>{item}</ContainedListItem>
               ))}
             </ContainedList>
           </Tile>
           <CodeSnippet type="multi">
-            {JSON.stringify(resume, null, 2)}
+            {JSON.stringify(oldresume, null, 2)}
           </CodeSnippet>
         </Column>
         <Column className="bluebox right" sm={3} md={6} lg={12}>
@@ -81,14 +95,14 @@ export default function App() {
             <Column className="greenbox right" sm={4} md={8} lg={16}>
               <Tile hasRoundedCorners>
                 <h1>Intro</h1>
-                <p>{resume.content.tagline}</p>
+                <p>{oldresume.content.tagline}</p>
               </Tile>
             </Column>
           </Grid>
           <Grid className="redbox container">
             <Column className="greenbox right" sm={4} md={8} lg={16}>
               <h1>Skills</h1>
-              {resume.content.skills.map((skill) => (
+              {oldresume.content.skills.map((skill) => (
                 <Tile style={{ margin: "10px", border: "1px solid yellow" }}>
                   <h3>{skill.name}</h3>
                   <p>{skill.description}</p>
