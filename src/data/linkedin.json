@@ -1,0 +1,420 @@
+{
+  "basics": {
+    "name": "David Spell",
+    "label": "Jack of all trades, master of learning",
+    "picture": "",
+    "email": "david@dspell.net",
+    "phone": "864-513-1312",
+    "website": "",
+    "summary": "Accomplished IT professional with proven talent in desktop and application deployment and delivery, desktop administration, scripting, and troubleshooting. History of developing non-traditional solutions to unconventional problems, works extremely well in cooperative and cross-functional environments.",
+    "location": {
+      "countryCode": "US",
+      "address": "United States",
+      "city": "Raleigh",
+      "state": "NC"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "dspell1",
+        "url": "https://www.linkedin.com/in/dspell1/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "IBM",
+      "endDate": "",
+      "highlights": [],
+      "position": "Full Stack Developer",
+      "startDate": "2023-05-31",
+      "summary": "SOLVE is a small, elite team that uses Watson NLP to automate, analyze, and report case data. Responsibilities currently focus on frontend migration from self hosted OpenLiberty to IBM Carbon with React on Cirrus with CI/CD.",
+      "website": "https://www.linkedin.com/company/ibm/"
+    },
+    {
+      "company": "IBM",
+      "endDate": "2023-05-31",
+      "highlights": [],
+      "position": "QRadar L2 Product Support, Bravo Squad Lead",
+      "startDate": "2022-09-30",
+      "summary": "Bravo squad is responsible for resolving system-down emergencies, upgrades, patches, firmware, high-availability, backup/restore, API, and other system tasks. As the squad lead, I was part of a small group responsible for coordinating 24/7 global case assignment, communication, and escalation response.\nHighlights include reusable documentation templates, bug reporting, and XDR SRE.",
+      "website": "https://www.linkedin.com/company/ibm/"
+    },
+    {
+      "company": "IBM",
+      "endDate": "2022-09-30",
+      "highlights": [],
+      "position": "QRadar L2 Product Support, Weekend Squad Lead, Americas",
+      "startDate": "2021-03-31",
+      "summary": "Friday through Sunday, weekend squad lead is the sole point of contact for all escalations and agent assistance for all squads in North and South America. Monthly, all squad leads report case statistics and pain points to the tribe lead. Due to the architecture of the reporting solutions available, it was not possible to report my statistics properly. I created my own reporting solution using scripts and locally hosted Postgres and Grafana which was able to identify the source and cause of the most expensive customer satisfaction complaints.",
+      "website": "https://www.linkedin.com/company/ibm/"
+    },
+    {
+      "company": "IBM",
+      "endDate": "2021-03-31",
+      "highlights": [],
+      "position": "QRadar L2 Product Support",
+      "startDate": "2018-08-31",
+      "summary": "My skills as a QRadar administrator were noticed by the support team when I was able to resolve my own cases faster than I could get a response. Primarily assigned to the Bravo squad (system-down, patching/upgrades, firmware, API, etc), I was exceptionally skilled in troubleshooting issues that were out of my scope by communicating with other squads. This resulted in decreased time-to-resolution since I would remain in contact with the customer. Many times I was asked by other engineers to review their case and provide direction, which ultimately led to my promotion to Squad Lead.",
+      "website": "https://www.linkedin.com/company/ibm/"
+    },
+    {
+      "company": "IBM",
+      "endDate": "2018-08-31",
+      "highlights": [],
+      "position": "QRadar SIEM Administrator, MSS",
+      "startDate": "2015-06-30",
+      "summary": "The MSS mSIEM Admin role is the dedicated internal contact point for a small group of external QRadar customers. Responsibilities include configuring and troubleshooting log sources, patching and upgrading, and incident reporting. The admin works closely with the SCE to determine the best actions necessary to ensure the health of the environment and the quality of the service, and create cases with QRadar Product Support to affect the behavior of the product. Highlights include automation of log source management, Nagios optimization, and documentation improvements.",
+      "website": "https://www.linkedin.com/company/ibm/"
+    },
+    {
+      "company": "Piedmont Technical College",
+      "endDate": "2015-06-30",
+      "highlights": [],
+      "position": "Adjunct Instructor",
+      "startDate": "2011-08-31",
+      "summary": "Teach classes including Technical Support Concepts, Troubleshooting Windows 7, Fundamentals of Wireless, Client/Server Virtualization, Data Communications (A+/Network+), Internet Programming (HTML5), and Project Management, as requested.",
+      "website": "https://www.linkedin.com/school/piedmont-technical-college/"
+    },
+    {
+      "company": "Piedmont Technical College",
+      "endDate": "2015-06-30",
+      "highlights": [],
+      "position": "Systems Support Technician",
+      "startDate": "2011-04-30",
+      "summary": "•\tDirectly responsible for deployment and maintenance of over 2000 endpoints and 250+ applications across eight sites using technologies such as Microsoft SCCM 2007/2012, Citrix XenDesktop 5.5/XenApp 6.5, and Norton Ghost.\n•\tEnsure compatibility of applications and user experience throughout different environments.\n•\tDeploy critical and security patches to desktops via WSUS, as well as applicable Citrix Hotfixes via phased rollout strategy.\n•\tCreate, troubleshoot, and maintain Active Directory and Group Policies relating to student computers, users and applications.\n•\tAdminister hardware/software update/replacement lifecycle.\n•\tProvide secondary support for teleconferencing and A/V systems.\n•\tAssist management and training of helpdesk staff.",
+      "website": "https://www.linkedin.com/school/piedmont-technical-college/"
+    },
+    {
+      "company": "Sykes",
+      "endDate": "2011-04-30",
+      "highlights": [],
+      "position": "BES Technician",
+      "startDate": "2011-01-31",
+      "summary": "•\tProvided BES Support for large entities including Facebook, Visa, and the Department of Defense. \n•\tProvided assistance to other agents to determine the best possible solution to a customer’s particular issue. \n•\tMaintained a low call time and high rate of problem resolution.",
+      "website": "https://www.linkedin.com/company/sykes/"
+    },
+    {
+      "company": "Genesis Telecommunications",
+      "endDate": "2011-01-31",
+      "highlights": [],
+      "position": "System Administrator",
+      "startDate": "2008-04-30",
+      "summary": "•\tPlanned, installed and maintained Cisco voice/data networks and Windows domains in a wide variety of environments.\n•\tPerformed diagnostics and troubleshooting on hardware and software for desktops, laptops and servers at commercial and residential locations.\n•\tProvided support to end users for all software.\n•\tResponded to 24-hour on-call emergencies.\n•\tDesigned multiple websites using hand-written standard-compliant HTML/PHP and various CMS’s such as Joomla! and Drupal.",
+      "website": ""
+    },
+    {
+      "company": "Insite Support Services",
+      "endDate": "2008-05-31",
+      "highlights": [],
+      "position": "NOC agent, second level technician",
+      "startDate": "2006-05-31",
+      "summary": "•\tProvided phone support to customers of various ISP’s across the nation.\n•\tTrained and provided assistance to other agents.\n•\tMonitored contracted ISP’s network equipment to ensure maximum uptime.",
+      "website": ""
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Piedmont technical college",
+      "area": "Networking",
+      "studyType": "AS",
+      "startDate": "2008",
+      "endDate": "2009",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Newberry College",
+      "area": "Music",
+      "studyType": "Bachelor of Arts",
+      "startDate": "2005",
+      "endDate": "2008",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Red Hat",
+      "area": "RHCSA 8 Training",
+      "studyType": "Certification",
+      "startDate": null,
+      "endDate": "2022",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Red Hat",
+      "area": "RHOCP Training",
+      "studyType": "Certification",
+      "startDate": null,
+      "endDate": "2022",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "XDR",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Case Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Customer Service",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SIEM",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Piedmont Technical College",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Servers",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Managed Security Services",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Windows XP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Server Administration",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Troubleshooting",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Escalation Resolution",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cisco Technologies",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Exchange",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Office",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "System Administration",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "DHCP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Linux System Administration",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Java Database Connectivity (JDBC)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "OS X",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Hardware",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Virtualization",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Lighting System Upgrades",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Continuous Integration and Continuous Delivery (CI/CD)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "IBM Db2",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Norton Ghost",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Computer Hardware",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "IBM Cirrus",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "A  Certified",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "React",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Citrix",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SCCM",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Help Desk Support",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Telecommunications",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Kubernetes",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Java",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "De-escalation",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Computer Repair",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "IBM QRadar",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Group Policy",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Technical Support",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Reporting & Analysis",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Critical Incident Response",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Windows Server",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Active Directory",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Blackberry Enterprise Server",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "TCP/IP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "High Availability (HA)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Carbon for React",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Windows 7",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "interests": [
+      "DND/MTG",
+      "3D Printing",
+      "Coffee",
+      "Drone Photography",
+      "Homelab",
+      "Kickball",
+      "Knit/Crochet"
+  ],
+  "references": []
+}
