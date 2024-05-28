@@ -24,7 +24,7 @@
   "work": [
     {
       "company": "IBM",
-      "endDate": "",
+      "endDate": "present",
       "highlights": [],
       "position": "Full Stack Developer",
       "startDate": "2023-05-31",
@@ -176,11 +176,6 @@
       "keywords": []
     },
     {
-      "name": "Piedmont Technical College",
-      "level": "",
-      "keywords": []
-    },
-    {
       "name": "Servers",
       "level": "",
       "keywords": []
@@ -291,7 +286,7 @@
       "keywords": []
     },
     {
-      "name": "A  Certified",
+      "name": "A+  Certified",
       "level": "",
       "keywords": []
     },

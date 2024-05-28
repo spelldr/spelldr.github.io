@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ThemeContext } from "./contexts/themeContext";
 
 import "./App.scss";
@@ -11,20 +11,31 @@ import {
   ContainedListItem,
   Tile,
   Link,
+  Tag,
+  Search,
+  ExpandableTile,
+  TileAboveTheFoldContent,
+  TileBelowTheFoldContent,
+  Stack,
 } from "@carbon/react";
 import oldresume from "./data/resume.json";
-import resume from './data/linkedin.json'
+import resume from "./data/linkedin.json";
 
 export default function App() {
   const { toggleTheme } = React.useContext(ThemeContext);
+  const [SkillFilter, setSkillFilter] = useState(".");
 
   return (
     <Theme theme="g100">
-      <Grid className="redbox container">
-        <Column className="greenbox left" sm={1} md={2} lg={4}>
+      <Grid className="container"
+      style={{width:'1095px', paddingTop:'20px'}}
+      >
+        <Column className="left" sm={1} md={2} lg={4} >
           <Tile className="content">
-            <h1>PFP</h1>
-            <h3>Contact</h3>
+            <img 
+            src='./src/components/pfp.jpg'
+            width='200'
+            />
           </Tile>
           <hr />
           <Tile className="content">
@@ -37,14 +48,15 @@ export default function App() {
               className="hideHeader"
             >
               <ContainedListItem>{resume.basics.label}</ContainedListItem>
-              <ContainedListItem>{resume.basics.location.city}, {resume.basics.location.state}</ContainedListItem>
+              <ContainedListItem>
+                {resume.basics.location.city}, {resume.basics.location.state}
+              </ContainedListItem>
               <ContainedListItem>{resume.basics.email}</ContainedListItem>
               <ContainedListItem>{resume.basics.phone}</ContainedListItem>
               <ContainedListItem>
-                {
-                  resume.basics.profiles.map(profile =>
-                  <Link href={profile.url}>{profile.network}</Link>)
-                }
+                {resume.basics.profiles.map((profile) => (
+                  <Link href={profile.url}>{profile.network}</Link>
+                ))}
               </ContainedListItem>
             </ContainedList>
           </Tile>
@@ -58,17 +70,17 @@ export default function App() {
               size="sm"
               // className="hideHeader"
             >
-              {
-                  resume.education.sort((a,b) => a.endDate > b.endDate ? 1 : -1)
-                  .map((item, key) => (
-                    <ContainedListItem key={key}>
-                      {item.studyType}{' '}
-                      {item.area}<br />
-                      {item.institution}{', '}
-                      {item.endDate}
-                    </ContainedListItem>
-                  ))
-              }
+              {resume.education
+                .sort((a, b) => (a.endDate > b.endDate ? 1 : -1))
+                .map((item, key) => (
+                  <ContainedListItem key={key}>
+                    {item.studyType} {item.area}
+                    <br />
+                    {item.institution}
+                    {", "}
+                    {item.endDate}
+                  </ContainedListItem>
+                ))}
             </ContainedList>
           </Tile>
           <hr />
@@ -87,32 +99,99 @@ export default function App() {
             </ContainedList>
           </Tile>
           <CodeSnippet type="multi">
-            {JSON.stringify(oldresume, null, 2)}
+            {JSON.stringify(resume, null, 2)}
           </CodeSnippet>
         </Column>
-        <Column className="bluebox right" sm={3} md={6} lg={12}>
-          <Grid className="redbox container">
-            <Column className="greenbox right" sm={4} md={8} lg={16}>
+        <Column className="right" sm={3} md={6} lg={12}>
+          <Grid className="container">
+            <Column className="right" sm={4} md={8} lg={16}>
               <Tile hasRoundedCorners>
                 <h1>Intro</h1>
-                <p>{oldresume.content.tagline}</p>
+                <p>{resume.basics.summary}</p>
               </Tile>
             </Column>
           </Grid>
-          <Grid className="redbox container">
-            <Column className="greenbox right" sm={4} md={8} lg={16}>
+          <Grid className="container">
+            <Column className="right" sm={4} md={8} lg={16}>
               <h1>Skills</h1>
-              {oldresume.content.skills.map((skill) => (
-                <Tile style={{ margin: "10px", border: "1px solid yellow" }}>
-                  <h3>{skill.name}</h3>
-                  <p>{skill.description}</p>
-                </Tile>
-              ))}
+              <Tile style={{ margin: "10px 0" }}>
+                <Search
+                  style={{ border: "1px solid white", margin: "5px 0" }}
+                  onChange={(e) =>
+                    setSkillFilter(
+                      `${e.target.value
+                        .toLocaleLowerCase()
+                        .replaceAll(/\\/gi, "")}`
+                    )
+                  }
+                />
+                <div style={{ padding: "3px" }}>
+                  {resume.skills
+                    .sort((a, b) => (a.name > b.name ? 1 : -1))
+                    .map((skill) =>
+                      skill.name.toLocaleLowerCase().match(SkillFilter) ? (
+                        <Tag
+                          key={`tag_${skill.name.replaceAll(/ /g, "_")}`}
+                          type="magenta "
+                        >
+                          {skill.name}
+                        </Tag>
+                      ) : null
+                    )}
+                </div>
+              </Tile>
+            </Column>
+          </Grid>
+          <Grid className="container">
+            <Column className="right" sm={4} md={8} lg={16}>
+              <h1>Work Experience</h1>
+              <Tile style={{ margin: "10px 0" }}>
+                <div style={{ padding: "3px" }}>
+                  {false &&
+                    resume.work.map((job) => (
+                      <Tile>
+                        <h3>
+                          {job.company} - {job.position}
+                        </h3>
+                        <h4>
+                          {job.startDate} - {job.endDate}{" "}
+                        </h4>
+                        {job.summary.replaceAll(/\\t/g,/\t/)}
+                      </Tile>
+                    ))}
+                </div>
+                <Stack gap={3}>
+                {resume.work.map((job) => (
+                  <ExpandableTile
+                    id={`ExpTile${job.endDate}`}
+                    tileCollapsedIconText="Interact to Expand tile"
+                    tileExpandedIconText="Interact to Collapse tile"
+                    style={{border: '1px solid white'}}
+                  >
+                    <TileAboveTheFoldContent>
+                      <div 
+                      // style={{height: "200px",}}
+                      >
+                      <h4>{job.company} - {job.position}</h4>
+                      <h5>{job.startDate} - {job.endDate}{" "}</h5>
+                      </div>
+                    </TileAboveTheFoldContent>
+                    <TileBelowTheFoldContent>
+                      <div 
+                      style={{ padding:'10px' }}
+                      >
+                        {job.summary}
+                      </div>
+                    </TileBelowTheFoldContent>
+                  </ExpandableTile> 
+                ))}
+                </Stack>
+              </Tile>
             </Column>
           </Grid>
         </Column>
-        <Column className="bluebox footer" sm={4} md={8} lg={16}>
-          <h3>Footer</h3>
+        <Column className="footer" sm={4} md={8} lg={16}>
+          {/* <h3>Footer</h3> */}&nbsp;
         </Column>
       </Grid>
     </Theme>
