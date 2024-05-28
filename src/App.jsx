@@ -27,19 +27,27 @@ export default function App() {
 
   return (
     <Theme theme="g100">
-      <Grid className="container"
-      style={{width:'1095px', paddingTop:'20px'}}
+      <Grid
+        className="container"
+        style={{ width: "1095px", paddingTop: "20px" }}
       >
-        <Column className="left" sm={1} md={2} lg={4} >
+        <Column className="left" sm={1} md={2} lg={4}>
           <Tile className="content">
-            <img 
-            src='./src/components/pfp.jpg'
-            width='200'
-            />
+            <img src="./src/components/pfp.jpg" width="200" />
+            <div
+              style={{
+                position: "absolute",
+                marginTop: "-50px",
+                padding: "5px",
+                width: "200",
+                backgroundColor: "lightblue",
+              }}
+            >
+              <h3>David Spell</h3>
+            </div>
           </Tile>
           <hr />
           <Tile className="content">
-            <h6>Contact Info</h6>
             <ContainedList
               isInset
               kind="on-page"
@@ -47,7 +55,6 @@ export default function App() {
               size="sm"
               className="hideHeader"
             >
-              <ContainedListItem>{resume.basics.label}</ContainedListItem>
               <ContainedListItem>
                 {resume.basics.location.city}, {resume.basics.location.state}
               </ContainedListItem>
@@ -71,7 +78,7 @@ export default function App() {
               // className="hideHeader"
             >
               {resume.education
-                .sort((a, b) => (a.endDate > b.endDate ? 1 : -1))
+                .sort((a, b) => (a.endDate > b.endDate ? -1 : 1))
                 .map((item, key) => (
                   <ContainedListItem key={key}>
                     {item.studyType} {item.area}
@@ -106,15 +113,17 @@ export default function App() {
           <Grid className="container">
             <Column className="right" sm={4} md={8} lg={16}>
               <Tile hasRoundedCorners>
-                <h1>Intro</h1>
-                <p>{resume.basics.summary}</p>
+                <h1>{resume.basics.label}</h1>
+                <div style={{ padding: "10px" }}>
+                  <p>{resume.basics.summary}</p>
+                </div>
               </Tile>
             </Column>
           </Grid>
           <Grid className="container">
             <Column className="right" sm={4} md={8} lg={16}>
-              <h1>Skills</h1>
               <Tile style={{ margin: "10px 0" }}>
+              <h1>Skills</h1>
                 <Search
                   style={{ border: "1px solid white", margin: "5px 0" }}
                   onChange={(e) =>
@@ -132,7 +141,7 @@ export default function App() {
                       skill.name.toLocaleLowerCase().match(SkillFilter) ? (
                         <Tag
                           key={`tag_${skill.name.replaceAll(/ /g, "_")}`}
-                          type="magenta "
+                          type="cyan"
                         >
                           {skill.name}
                         </Tag>
@@ -144,47 +153,33 @@ export default function App() {
           </Grid>
           <Grid className="container">
             <Column className="right" sm={4} md={8} lg={16}>
-              <h1>Work Experience</h1>
               <Tile style={{ margin: "10px 0" }}>
-                <div style={{ padding: "3px" }}>
-                  {false &&
-                    resume.work.map((job) => (
-                      <Tile>
-                        <h3>
-                          {job.company} - {job.position}
-                        </h3>
-                        <h4>
-                          {job.startDate} - {job.endDate}{" "}
-                        </h4>
-                        {job.summary.replaceAll(/\\t/g,/\t/)}
-                      </Tile>
-                    ))}
-                </div>
+              <h1 style={{paddingBottom:'5px'}}>Work Experience</h1>
                 <Stack gap={3}>
-                {resume.work.map((job) => (
-                  <ExpandableTile
-                    id={`ExpTile${job.endDate}`}
-                    tileCollapsedIconText="Interact to Expand tile"
-                    tileExpandedIconText="Interact to Collapse tile"
-                    style={{border: '1px solid white'}}
-                  >
-                    <TileAboveTheFoldContent>
-                      <div 
-                      // style={{height: "200px",}}
-                      >
-                      <h4>{job.company} - {job.position}</h4>
-                      <h5>{job.startDate} - {job.endDate}{" "}</h5>
-                      </div>
-                    </TileAboveTheFoldContent>
-                    <TileBelowTheFoldContent>
-                      <div 
-                      style={{ padding:'10px' }}
-                      >
-                        {job.summary}
-                      </div>
-                    </TileBelowTheFoldContent>
-                  </ExpandableTile> 
-                ))}
+                  {resume.work.map((job) => (
+                    <ExpandableTile
+                      id={`ExpTile${job.endDate}`}
+                      tileCollapsedIconText="Interact to Expand tile"
+                      tileExpandedIconText="Interact to Collapse tile"
+                      style={{ border: "1px solid white" }}
+                    >
+                      <TileAboveTheFoldContent>
+                        <div
+                        // style={{height: "200px",}}
+                        >
+                          <h4>
+                            {job.company} - {job.position}
+                          </h4>
+                          <h5>
+                            {job.startDate} - {job.endDate}{" "}
+                          </h5>
+                        </div>
+                      </TileAboveTheFoldContent>
+                      <TileBelowTheFoldContent>
+                        <div style={{ padding: "10px" }}>{job.summary}</div>
+                      </TileBelowTheFoldContent>
+                    </ExpandableTile>
+                  ))}
                 </Stack>
               </Tile>
             </Column>
