@@ -1,142 +1,162 @@
-[
-  {
-    "metadata": {
-      "id": "1",
-      "type": "file",
-      "name": "dspell-resume.json",
-      "date": "2023-06-11"
-    },
-    "contact": {
-      "name": "David Spell",
-      "phone": "864-513-1312",
-      "email": "david@dspell.net",
-      "location": "Raleigh, NC",
-      "linkedin": "https://linkedin.com/dspell1"
-    },
-    "content": {
-      "tagline": "Accomplished IT professionall with over 16 years of experience. Proven talent in automation, scripting, deep-dive knowledge transfer, pattern recognition, and conflict de-escalation. History of developing non-traditional solutions to unconventional problems, works extremely well in cooperative and cross-functional environments. Dark mode enthusiast.",
-      "skills": [
-        {"FullStackDevelopment": "Use modern technologies and frameworks including React, Node.js, IBM Carbon, and others"},
-        {"ProductSupport":"Represent the company to internal and external clients for a wide variety of deployments to resolve issues and satisfy concerns."},
-        {"Troubleshooting":"Quickly and efficiently identify components of a failing system and restore functionality using an intimate knowledge of the technology"},
-        {"DesktopAndServerAdministration":"Designed, implemented, and maintained multiple domain and desktop environments using technologies such as QRadar 7.2.7-7.5.0, RHEL 6-8, OpenShift 4.7, Windows Server 2003-2012, Norton Ghost, Microsoft SCCM 2007/2012, Citrix XenDesktop 5.5/XenApp 6.5, VmWare View, Unidesk, and Blackberry Enterprise Server"},
-        {"HardwareAndSoftware":"Familiarity with all aspects of server and workstation hardware installation and maintenance of internal components and peripherals. All versions of Windows since XP/2003, many flavors of Linux since Debian 4, Mac OSX 10.7, iOS, and Android"},
-        {"ProgrammingLanguages":"Extremely proficient with Bash and Powershell, comfortable in Python, node.js, Perl, Go, and Ansible."},
-        {"NetworkingAndHomelab":"Self-taught ESXi, Docker, Cisco VLANs, pfsense, Freenas, Jellyfin, Plex, Windows and Linux based DHCP/DNS/PXE, PSQL, Grafana, application hosting"}
-      ],
-      "educationAndCertification": [
-        "RHCSA 8 Training (certification planned)",
-        "RHOCP training (certification planned)",
-        "Apple ACSP 10.7, 2012",
-        "CompTIA A+, Network+, 2010 (permanent)",
-        "A.A.S Networking, Piedmont Technical College, 2009",
-        "B.A. Music, Newberry College, 2008"
-      ],
-      "hobbies": [
-        "DND",
-        "3D Printing",
-        "Coffee",
-        "FPV Drone",
-        "Homelab",
-        "Kickball",
-        "Knit/Crochet"
-      ],
-      "experience": [
-        {
-          "company": "IBM",
-          "title": "Full Stack Developer, IBM Solve",
-          "start": "2023-05",
-          "end": null,
-          "highlights": [
-            "React, Node, IBM Carbon, Java, Postgres, and more as needed"
-          ]
-        },
-        {
-          "company": "IBM",
-          "title": "L2 QRadar Weekend Squad Lead",
-          "start": "2021-04",
-          "end": "2023-05",
-          "highlights": [
-            "Redesigned internal wikis from the ground up to easily facilitate system-down troubleshooting. Shared framework with other squads (implemented by 50%).",
-            "Established standardized Salesforce Case Prioritization View so that all agents have a single list of cases to pick from without confusion. Assign cases and tasks manually when necessary.",
-            "Report to first line management weekly, upper management monthly.",
-            "Designed custom reporting solution to show consistent squad improvement when existing report features prevented accurate statistics.",
-            "Developed and presented brown bag training classes to team members to improve the department's overall efficiency."
-          ]
-        },
-        {
-          "company": "IBM",
-          "title": "L2 QRadar Product Support",
-          "start": "2018-10",
-          "end": "2021-04",
-          "highlights": [
-            "Worked on four separate teams to resolve cases at a monthly rate of 200% above expectation",
-            "SME topics include Deployment Configuration, Docker Applications, SSL Certificates, system-down, and weekend communication",
-            "Help lead the Support Tools team to identify gaps in capabilities, develop tools and documentation to automate resolution of frequent and repetitive issues.",
-            "Join calls with development to escalate and discuss defects",
-            "Provide swarming assistance to other agents and take handoffs"
-          ]
-        },
-        {
-          "company": "IBM",
-          "title": "MSIEM Administrator",
-          "start": "2015-06",
-          "end": "2018-10",
-          "highlights": [
-            "Plan, install, maintain, optimize, and troubleshoot QRadar SIEM 7.2.8+ for clients under contract with IBM MSS.",
-            "Write scripts in various languages to automate and optimize nagios monitoring as well as processes and procedures both for internal and external teams.",
-            "Document processes and procedures on internal team wiki.",
-            "Drive issues to resolution, escalating to internal, client, vendor management, and development as necessary.",
-            "Participate in internal projects to increase MSS ability to support various scenarios."
-          ]
-        },
-        {
-          "company": "Piedmont Technical College",
-          "title": "System Support Technician",
-          "start": "2011-04",
-          "end": "2015-06",
-          "highlights": [
-            "Directly responsible for deployment and maintenance of over 2000 endpoints and 250+ applications across eight sites using technologies such as Mirosoft SCCM 2007/2012, Citrix XenDesktop 5.5/XenApp 6.5, and Norton Ghost.",
-            "Rearchitected above systems from sneakernet to touchless PXE/Scheduled Deployments",
-            "Ensured compatibility of applications and user experience throughout different environments.",
-            "Deploy critical and security patches to desktops via WSUS, as well as applicatble Citrix Hotfixes via phased rollout strategy.",
-            "Create, troubleshoot, and maintain Active Directory and Group Policy objects relating to student computers, users, and applications.",
-            "Plan and implement hardware and software replacement lifecycle.",
-            "Provide secondary support for PEN systems (teleconferencing, A/V).",
-            "Assist management and training of helpdesk staff."
-          ]
-        },
-        {
-          "company": "Piedmont Technical College",
-          "title": "Adjunct Instructor",
-          "start": "2011-08",
-          "end": "2016-06",
-          "highlights": "Taught classes including Technical Support Concepts, Troubleshooting Windows 7, Fundamentals of Wireless, Client/Server Veirtualization, Data Communications (A+/Network+), Internet Security, and Project Management, as requested."
-        },
-        {
-          "company": "Sykes Enterprises",
-          "title": "Tier II Blackberry Support Technician",
-          "start": "2011-01",
-          "end": "2011-04",
-          "highlights": [
-            "Support Blackberry Enterprise Server for large entities including Facebook, Visa, and the Department of Defense.",
-            "Provided assistance to other agents to determine the best possible solution to a client's particular issue.",
-            "Maintained a low call time and high rate of problem resolution"
-          ]
-        },
-        {
-          "company": "Genesis Telecommunications",
-          "title": "System/Network Administrator, Web Designer, Computer Technician",
-          "start": "2008-05",
-          "end": "2011-01",
-          "highlights": [
-            "Planned, installed, and maintained Cisco voice/data networks and Windows domains in a wide variety of local business and home environments.",
-            "Performed diagnostics and troubleshoooting on hardware and software for desktops, laptops, and servers at commerical and residential locations.",
-            "Responded to 24/7 on-call emergencies.",
-            "Designed multiple websites using hand-written standard-compliant HTML/PHP and various CMS's such as Joomla! and Drupal."
-          ]
-        }
-      ]
-    }
+{
+  "metadata": {
+    "id": "1",
+    "type": "file",
+    "name": "dspell-resume.json",
+    "date": "2024-03-03"
+  },
+  "contact": {
+    "name": "David Spell",
+    "phone": "864-513-1312",
+    "title": "Software Engineer",
+    "email": "david@dspell.net",
+    "location": "Raleigh, NC",
+    "linkedin": "https://linkedin.com/dspell1"
+  },
+  "content": {
+    "tagline": "Accomplished IT professional with over 16 years of experience. Proven talent in automation, scripting, deep-dive knowledge transfer, pattern recognition, and conflict de-escalation. History of developing non-traditional solutions to unconventional problems, works extremely well in cooperative and cross-functional environments. Dark mode enthusiast.",
+    "skills": [
+      {
+        "name": "Full Stack Development",
+        "description": "Use modern technologies and frameworks including React, Node.js, IBM Carbon, Java, Swagger, and others"
+      },
+      {
+        "name": "Product Support",
+        "description": "Represent the company to internal and external clients for a wide variety of deployments to resolve issues and satisfy concerns."
+      },
+      {
+        "name": "Troubleshooting",
+        "description": "Quickly and efficiently identify components of a failing system and restore functionality using an intimate knowledge of the technology"
+      },
+      {
+        "name": "Desktop and Server Administration",
+        "description": "Designed, implemented, and maintained multiple server and desktop environments using technologies such as QRadar 7.2.7-7.5.0, RHEL 6-8, OpenShift 4.7, Windows Server 2003-2012, Norton Ghost, Microsoft SCCM 2007/2012, Citrix XenDesktop 5.5/XenApp 6.5, VmWare View, Unidesk, and Blackberry Enterprise Server"
+      },
+      {
+        "name": "Hardware and Software",
+        "description": "Familiarity with all aspects of server and workstation hardware installation and maintenance of internal components and peripherals. All versions of Windows since XP/2003, many flavors of Linux since Debian 4, Mac OSX 10.7, iOS, and Android"
+      },
+      {
+        "name": "Programming Languages",
+        "description": "Extremely proficient with Bash and Powershell, comfortable in Python, node.js, Perl, Go, and Ansible."
+      },
+      {
+        "name": "Networking and Homelab",
+        "description": "Self-taught ESXi, Docker, Cisco VLANs, pfsense, Freenas, Jellyfin, Plex, Windows and Linux based DHCP/DNS/PXE, PSQL, Grafana, application hosting"
+      }
+    ],
+    "education": [
+      "RHCSA 8 Training, 2022",
+      "RHOCP training, 2022",
+      "Apple ACSP 10.7, 2012",
+      "CompTIA A+, Network+, 2010 (permanent)",
+      "A.A.S Networking, Piedmont Technical College, 2009",
+      "B.A. Music, Newberry College, 2008"
+    ],
+    "hobbies": [
+      "DND/MTG",
+      "3D Printing",
+      "Coffee",
+      "Drone Photography",
+      "Homelab",
+      "Kickball",
+      "Knit/Crochet"
+    ],
+    "experience": [
+      {
+        "company": "IBM",
+        "title": "Full Stack Developer, IBM Solve",
+        "start": "2023-05",
+        "end": null,
+        "highlights": [
+          "React, Node, IBM Carbon, Java, Postgres, and more as needed"
+        ]
+      },
+      {
+        "company": "IBM",
+        "title": "L2 QRadar Weekend Squad Lead",
+        "start": "2021-04",
+        "end": "2023-05",
+        "highlights": [
+          "Redesigned internal wikis from the ground up to easily facilitate system-down troubleshooting. Shared framework with other squads and assisted with implementation.",
+          "Established standardized Salesforce Case Prioritization View so that all agents have a single list of cases to pick from without confusion, eliminating the need to assign cases and tasks manually.",
+          "Report to first line management weekly, upper management monthly.",
+          "Designed custom reporting solution to show consistent squad improvement when existing report features prevented accurate statistics.",
+          "Developed and presented brown bag training classes to team members to improve the department's overall efficiency."
+        ]
+      },
+      {
+        "company": "IBM",
+        "title": "L2 QRadar Product Support",
+        "start": "2018-10",
+        "end": "2021-04",
+        "highlights": [
+          "Worked on four separate teams to resolve cases at a monthly rate of 200% above expectation.",
+          "SME topics include Deployment Configuration, Docker Applications, SSL Certificates, system-down, and weekend communication.",
+          "Help lead the Support Tools team to identify gaps in capabilities, develop tools and documentation to automate resolution of frequent and repetitive issues.",
+          "Join calls with development to discuss and escalate defects.",
+          "Provide swarming assistance to other agents and process end-of-shift handoffs."
+        ]
+      },
+      {
+        "company": "IBM",
+        "title": "MSIEM Administrator",
+        "start": "2015-06",
+        "end": "2018-10",
+        "highlights": [
+          "Plan, install, maintain, optimize, and troubleshoot QRadar SIEM 7.2.8+ for clients under contract with IBM MSS.",
+          "Write scripts in various languages to automate and optimize nagios monitoring as well as processes and procedures both for internal and external teams.",
+          "Document processes and procedures on internal team wiki.",
+          "Drive issues to resolution, escalating to internal, client, vendor management, and development as necessary.",
+          "Participate in internal projects to increase MSS ability to support various scenarios."
+        ]
+      },
+      {
+        "company": "Piedmont Technical College",
+        "title": "System Support Technician",
+        "start": "2011-04",
+        "end": "2015-06",
+        "highlights": [
+          "Sole engineer responsible for deployment and maintenance of over 2000 endpoints and 250+ applications across eight sites using technologies such as Microsoft SCCM 2007/2012, Citrix XenDesktop 5.5/XenApp 6.5, and Norton Ghost.",
+          "Rearchitected above systems from sneakernet to touchless PXE/Scheduled Deployments",
+          "Ensured compatibility of applications and user experience throughout different environments.",
+          "Deploy critical and security patches to desktops via WSUS, as well as applicatble Citrix Hotfixes via phased rollout strategy.",
+          "Create, troubleshoot, and maintain Active Directory and Group Policy objects relating to student computers, users, and applications.",
+          "Plan and implement hardware and software replacement lifecycle.",
+          "Provide secondary support for PEN systems (teleconferencing, A/V).",
+          "Assist management and training of helpdesk staff."
+        ]
+      },
+      {
+        "company": "Piedmont Technical College",
+        "title": "Adjunct Instructor",
+        "start": "2011-08",
+        "end": "2016-06",
+        "highlights": "Taught classes including Technical Support Concepts, Troubleshooting Windows 7, Fundamentals of Wireless, Client/Server Virtualization, Data Communications (A+/Network+), Internet Security, and Project Management, as requested."
+      },
+      {
+        "company": "Sykes Enterprises",
+        "title": "Tier II Blackberry Support Technician",
+        "start": "2011-01",
+        "end": "2011-04",
+        "highlights": [
+          "Support Blackberry Enterprise Server for large entities including Facebook, Visa, and the Department of Defense.",
+          "Provided assistance to other agents to determine the best possible solution to a client's particular issue.",
+          "Maintained a low call time and high rate of problem resolution"
+        ]
+      },
+      {
+        "company": "Genesis Telecommunications",
+        "title": "System/Network Administrator, Web Designer, Computer Technician",
+        "start": "2008-05",
+        "end": "2011-01",
+        "highlights": [
+          "Planned, installed, and maintained Cisco voice/data networks and Windows domains in a wide variety of local business and home environments.",
+          "Performed diagnostics and troubleshoooting on hardware and software for desktops, laptops, and servers at commerical and residential locations.",
+          "Responded to 24/7 on-call emergencies.",
+          "Designed multiple websites using hand-written standard-compliant HTML/PHP and various CMS's such as Joomla! and Drupal."
+        ]
+      }
+    ]
   }
-]
+}
